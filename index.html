@@ -6,10 +6,12 @@
     <title>Calculator</title>
     <style>
       .container{
-        display: flex;
-    justify-content: center;
-  align-items: center;
-   height: 100vh;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    
+  
+   
     
       }
       h1{
@@ -18,6 +20,17 @@
         font-size: 4rem;
         color: brown;
       }
+      .form1{
+        padding: 20px;
+      background-color:red;
+      }
+      .form{
+        padding: 10px;
+        background-color: green;
+      }
+      body{
+        background-color: bisque;
+      }
     </style>
 </head>
 <body>
@@ -25,13 +38,42 @@
   <h1>Calculator</h1><br/>
 <div class = "container">
 
-    <form action = "/" method = "post">
+  <form  class = "form1"action = "/love" method = "post">
+    <input type = "text" name = "num1" placeholder="Your Name">
+    <input type = "text" name = "num2" placeholder="Yor Crush Name">
+    <button type = "submit" name = "submit"> Love Calculator </button>
+      </form>
+
+    <form  class = "form"action = "/addition" method = "post">
   <input type = "text" name = "num1" placeholder="First Number">
   <input type = "text" name = "num2" placeholder="Second Number">
-  <button type = "submit" name = "submit">Calculator</button>
-
+  <button type = "submit" name = "submit"> Add </button>
     </form>
-  </div>
+
+    <form class = "form" action = "/subtract" method = "post">
+      <input type = "text" name = "num1" placeholder="First Number">
+      <input type = "text" name = "num2" placeholder="Second Number">
+      <button type = "submit" name = "submit"> Subtract </button>
+      </form>
+
+    <form class = "form" action = "/multiply" method = "post">
+      <input type = "text" name = "num1" placeholder="First Number">
+      <input type = "text" name = "num2" placeholder="Second Number">
+      <button type = "submit" name = "submit"> Multiply </button>
+        </form>
+    
+      <form class = "form" action = "/div" method = "post">
+        <input type = "text" name = "num1" placeholder="First Number">
+        <input type = "text" name = "num2" placeholder="Second Number">
+        <button type = "submit" name = "submit"> Divide </button>
+          </form>
+          
+    
+    
+  
+  
+        </div>
+
     
 </body>
 </html>
